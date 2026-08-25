@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Interactive Envelope</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Envelope Section -->
+        <div class="envelope-wrapper" id="envelopeWrapper">
+            <div class="envelope">
+                <!-- Envelope body -->
+                <div class="envelope-body"></div>
+                
+                <!-- Envelope flap -->
+                <div class="envelope-flap"></div>
+                
+                <!-- Heart animation -->
+                <div class="heart-container" id="heartContainer">
+                    <div class="heart"></div>
+                </div>
+                
+                <!-- Arrow animation -->
+                <div class="arrow" id="arrow">
+                    <span>➜</span>
+                </div>
+                
+                <!-- Letter inside envelope -->
+                <div class="letter" id="letter">
+                    <p class="letter-text">Click the envelope! 💘</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cat reveal section (hidden initially) -->
+        <div class="cat-reveal" id="catReveal">
+            <div class="cat-container">
+                <div class="cat">
+                    <!-- Cat head -->
+                    <div class="cat-head">
+                        <!-- Left ear -->
+                        <div class="ear left">
+                            <div class="ear-inner"></div>
+                        </div>
+                        <!-- Right ear -->
+                        <div class="ear right">
+                            <div class="ear-inner"></div>
+                        </div>
+                        
+                        <!-- Eyes -->
+                        <div class="eyes">
+                            <div class="eye left">
+                                <div class="pupil"></div>
+                            </div>
+                            <div class="eye right">
+                                <div class="pupil"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Nose -->
+                        <div class="nose"></div>
+                        
+                        <!-- Mouth -->
+                        <div class="mouth"></div>
+                    </div>
+                    
+                    <!-- Body -->
+                    <div class="cat-body">
+                        <!-- Paws -->
+                        <div class="paw left-paw"></div>
+                        <div class="paw right-paw"></div>
+                    </div>
+                </div>
+                
+                <!-- Floating hearts around cat -->
+                <div class="hearts-floating">
+                    <div class="floating-heart" style="--delay: 0s; --left: 10%;">❤️</div>
+                    <div class="floating-heart" style="--delay: 0.5s; --left: 20%;">💕</div>
+                    <div class="floating-heart" style="--delay: 1s; --left: 80%;">❤️</div>
+                    <div class="floating-heart" style="--delay: 1.5s; --left: 70%;">💖</div>
+                    <div class="floating-heart" style="--delay: 2s; --left: 30%;">💕</div>
+                </div>
+            </div>
+            
+            <!-- Close button -->
+            <button class="close-btn" id="closeBtn">✕ Close</button>
+            
+            <!-- Letter message -->
+            <div class="cat-message">
+                <p>meow~ 🐱💌</p>
+                <p class="letter-content">Thanks for opening my letter! 💕 Hope you have the cutest day ever!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
